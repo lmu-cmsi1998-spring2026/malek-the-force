@@ -14,11 +14,11 @@ def rle(input):
         else:
             if count > 1:
                 output.append(count)
-            output.append(count)
             output.append(current_char)
             current_char = input[i]
             count = 1
 
-    output.append(count)
+    if count > 1:
+        output.append(count)
     output.append(current_char)
     return output
