@@ -1,4 +1,4 @@
-from rle import rle
+from rle import conflict
 from rld import rld
 
 def test(label, input):
